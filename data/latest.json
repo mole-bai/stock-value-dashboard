@@ -1,0 +1,381 @@
+{
+  "schema_version": 1,
+  "run_at": "2026-07-31T21:10:02.543128+08:00",
+  "status": "degraded",
+  "warnings": [
+    "9992.HK: 泡泡玛特投资者关系 未形成可比较公告列表；不等同于没有新公告。"
+  ],
+  "upcoming_events": [
+    {
+      "confidence": "official_confirmed",
+      "end": "2026-08-12T21:00:00+08:00",
+      "event_id": "0700.HK:results:2026Q2",
+      "event_type": "results",
+      "reminder_days": [
+        7,
+        1,
+        0
+      ],
+      "source_url": "https://www.tencent.com/en-us/investors.html",
+      "start": "2026-08-12T20:00:00+08:00",
+      "status": "scheduled",
+      "symbol": "0700.HK",
+      "tentative": false,
+      "timezone": "Asia/Hong_Kong",
+      "title": "腾讯 2026 年第二季度及中期业绩发布"
+    },
+    {
+      "confidence": "inferred",
+      "end": "2026-08-13T19:00:00+08:00",
+      "event_id": "600519.SS:results:2026H1:inferred",
+      "event_type": "results",
+      "reminder_days": [
+        7,
+        1
+      ],
+      "source_url": "https://www.moutaichina.com/mtgf/tzzgx/cwbg/index.html",
+      "start": "2026-08-13T18:00:00+08:00",
+      "status": "tentative",
+      "symbol": "600519.SS",
+      "tentative": true,
+      "timezone": "Asia/Shanghai",
+      "title": "贵州茅台 2026 年半年度报告窗口（推测，待预约披露确认）"
+    },
+    {
+      "confidence": "inferred",
+      "end": "2026-08-19T18:00:00+08:00",
+      "event_id": "9992.HK:results:2026H1:inferred",
+      "event_type": "results",
+      "reminder_days": [
+        7,
+        1
+      ],
+      "source_url": "https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&market=SEHK&stockId=1000068054",
+      "start": "2026-08-19T17:00:00+08:00",
+      "status": "tentative",
+      "symbol": "9992.HK",
+      "tentative": true,
+      "timezone": "Asia/Hong_Kong",
+      "title": "泡泡玛特 2026 年中期业绩窗口（推测，待董事会公告确认）"
+    }
+  ],
+  "stocks": [
+    {
+      "symbol": "0700.HK",
+      "name": "腾讯控股",
+      "market": "HK",
+      "price": {
+        "as_of": "2026-07-31T16:08:00+08:00",
+        "change_pct": "0.720644340822382365409071600",
+        "currency": "HKD",
+        "freshness": "fresh",
+        "provisional": true,
+        "source_url": "https://hq.sinajs.cn/list=hk00700",
+        "value": "475.200"
+      },
+      "metrics": {
+        "2025 净现金": "人民币 1,071 亿元",
+        "2025 自由现金流": "人民币 1,826 亿元",
+        "2026Q1 回购": "1,265 万股 / 约 76 亿港元",
+        "下一业绩日": "2026-08-12 20:00（香港时间，官方日历）",
+        "归母利润同比": "21.0%",
+        "盈利收益率（估值基准 EPS）": "6.39%",
+        "经调整稀释 EPS 同比": "12.0%",
+        "股息率（当前配置股息）": "1.12%",
+        "营收同比": "9.0%",
+        "静态市盈率（估值基准 EPS）": "15.64 倍"
+      },
+      "signals": [
+        {
+          "detail": "2026Q1 营收同比增长 9%，归母利润同比增长 21%，毛利同比增长 11%。",
+          "evidence_url": "https://static.www.tencent.com/uploads/2026/05/13/59cf8219adbb046153f69387479350ac.pdf",
+          "severity": "information",
+          "title": "利润增速快于收入"
+        },
+        {
+          "detail": "季度研发支出约人民币 225.42 亿元；需继续观察资本开支、云及广告增量回报。",
+          "evidence_url": "https://static.www.tencent.com/uploads/2026/05/13/59cf8219adbb046153f69387479350ac.pdf",
+          "severity": "yellow",
+          "title": "AI 投入回报需要持续验证"
+        }
+      ],
+      "recommendation": {
+        "action": "等待",
+        "action_code": "wait",
+        "confidence": "中",
+        "next_review_date": "2026-08-12T20:00:00+08:00",
+        "reasons": [
+          "基准内在价值约 555.36 HKD，建仓价上限约 416.52 HKD。",
+          "基准情景五年期年化总回报约 16.17%。",
+          "投资逻辑与数据质量门槛已通过。",
+          "当前价格尚未同时满足安全边际与目标年化回报门槛。"
+        ],
+        "risks": [
+          "人工智能资本开支上升但商业回报兑现慢于预期",
+          "游戏、内容和平台业务监管变化",
+          "投资组合公允价值和联营公司收益波动"
+        ],
+        "invalidation": [
+          "核心业务自由现金流连续多个报告期结构性下降",
+          "高资本投入未带来收入或利润增长且 ROIC 持续恶化",
+          "出现足以破坏微信生态或核心游戏业务的重大监管事件"
+        ],
+        "valuation": {
+          "base": {
+            "assumptions": [
+              "EPS 年增速 10.0%",
+              "退出市盈率 20 倍",
+              "折现率 12.0%"
+            ],
+            "currency": "HKD",
+            "expected_return": "0.16165829129282555703863005467416078",
+            "margin_of_safety": "0.144341259798575923838427600007950028",
+            "value": "555.361591804855291298826381864699232"
+          },
+          "bear": {
+            "assumptions": [
+              "EPS 年增速 5.0%",
+              "退出市盈率 16 倍",
+              "折现率 12.0%"
+            ],
+            "currency": "HKD",
+            "expected_return": "0.06366541276902886685686308941510088",
+            "margin_of_safety": "-0.34966981245742501363112613122074738",
+            "value": "352.086114406585693359375"
+          },
+          "bull": {
+            "assumptions": [
+              "EPS 年增速 14.0%",
+              "退出市盈率 24 倍",
+              "折现率 12.0%"
+            ],
+            "currency": "HKD",
+            "expected_return": "0.24660917552532713534205620879059982",
+            "margin_of_safety": "0.403571326803082192090871376935304861",
+            "value": "796.742379022256090049904801570774082"
+          },
+          "margin_of_safety": "0.144341259798575923838427600007950028"
+        }
+      }
+    },
+    {
+      "symbol": "9992.HK",
+      "name": "泡泡玛特",
+      "market": "HK",
+      "price": {
+        "as_of": "2026-07-31T16:08:00+08:00",
+        "change_pct": "-0.3676470588235294117647058800",
+        "currency": "HKD",
+        "freshness": "fresh",
+        "provisional": true,
+        "source_url": "https://hq.sinajs.cn/list=hk09992",
+        "value": "162.600"
+      },
+      "metrics": {
+        "2026-07-20 股本变动": "新增 56,053 股（约 0.0042%）",
+        "2026Q1 中国线上收入同比": "150%–155%",
+        "2026Q1 美洲收入同比": "55%–60%",
+        "2026Q1 营收同比（未经审计）": "75%–80%",
+        "THE MONSTERS 收入占比": "38.1%",
+        "存货周转天数": "123 天（上年 102 天）",
+        "归母利润同比": "308.8%",
+        "毛利率": "72.1%",
+        "现金及等价物": "人民币 137.75 亿元",
+        "盈利收益率（估值基准 EPS）": "6.42%",
+        "经营利润率": "45.5%",
+        "股息率（当前配置股息）": "1.60%",
+        "营收同比": "184.7%",
+        "静态市盈率（估值基准 EPS）": "15.57 倍"
+      },
+      "signals": [
+        {
+          "detail": "未经审计的 2026Q1 总收入同比增长 75%–80%；中国线上增长 150%–155%，美洲增长 55%–60%。",
+          "evidence_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0512/2026051200579.pdf",
+          "severity": "information",
+          "title": "2026Q1 仍保持高增长，但增速较 2025 全年回落"
+        },
+        {
+          "detail": "2025 年营收同比增长 184.7%，归母利润同比增长 308.8%。",
+          "evidence_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0512/2026051200579.pdf",
+          "severity": "information",
+          "title": "收入与利润高速增长"
+        },
+        {
+          "detail": "存货由约 15.25 亿元增至 54.73 亿元，周转天数由 102 天升至 123 天；THE MONSTERS 占收入 38.1%。",
+          "evidence_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0512/2026051200579.pdf",
+          "severity": "yellow",
+          "title": "库存与 IP 集中度上升"
+        },
+        {
+          "detail": "7 月 8 日授出 101,935 份奖励；7 月 20 日因奖励归属新增 56,053 股，单次稀释约 0.0042%，当前单次影响很小。",
+          "evidence_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0720/2026072000462.pdf",
+          "severity": "information",
+          "title": "股权激励及新增股份需累计跟踪"
+        }
+      ],
+      "recommendation": {
+        "action": "等待",
+        "action_code": "wait",
+        "confidence": "中",
+        "next_review_date": null,
+        "reasons": [
+          "基准内在价值约 238.94 HKD，建仓价上限约 155.31 HKD。",
+          "基准情景五年期年化总回报约 23.81%。",
+          "投资逻辑与数据质量门槛已通过。",
+          "当前价格尚未同时满足安全边际与目标年化回报门槛。"
+        ],
+        "risks": [
+          "THE MONSTERS 等头部 IP 集中度较高且消费者偏好可能快速变化",
+          "高速扩张导致库存、门店和海外执行风险上升",
+          "估值对持续高增长假设高度敏感"
+        ],
+        "invalidation": [
+          "核心自有 IP 收入连续两个报告期明显衰退且新 IP 无法接棒",
+          "库存增速持续显著高于收入并伴随现金转化恶化",
+          "海外扩张导致利润率、品牌力或资本回报持续下降"
+        ],
+        "valuation": {
+          "base": {
+            "assumptions": [
+              "EPS 年增速 12.0%",
+              "退出市盈率 25 倍",
+              "折现率 14.0%"
+            ],
+            "currency": "HKD",
+            "expected_return": "0.23810350691252495825498101136879924",
+            "margin_of_safety": "0.319508556274673674705008611540170030",
+            "value": "238.944958822482843578571621396690633"
+          },
+          "bear": {
+            "assumptions": [
+              "EPS 年增速 0.0%",
+              "退出市盈率 18 倍",
+              "折现率 14.0%"
+            ],
+            "currency": "HKD",
+            "expected_return": "0.04325145342079066700323221163586152",
+            "margin_of_safety": "-0.66563671713623565915228591676083584",
+            "value": "97.6203264056051848462410398746546857"
+          },
+          "bull": {
+            "assumptions": [
+              "EPS 年增速 20.0%",
+              "退出市盈率 30 倍",
+              "折现率 14.0%"
+            ],
+            "currency": "HKD",
+            "expected_return": "0.37269552322593313995925916227982454",
+            "margin_of_safety": "0.598370776153492559039282909731665741",
+            "value": "404.851017669325822594330840568167913"
+          },
+          "margin_of_safety": "0.319508556274673674705008611540170030"
+        }
+      }
+    },
+    {
+      "symbol": "600519.SS",
+      "name": "贵州茅台",
+      "market": "CN",
+      "price": {
+        "as_of": "2026-07-31T15:34:59+08:00",
+        "change_pct": "-0.8195276700740218540712019700",
+        "currency": "CNY",
+        "freshness": "fresh",
+        "provisional": true,
+        "source_url": "https://hq.sinajs.cn/list=sh600519",
+        "value": "1350.600"
+      },
+      "metrics": {
+        "2025 ROE": "32.53%",
+        "2025 年度已实施分红": "每股人民币 28.02423 元（含税）",
+        "2025 归母利润同比": "-4.53%",
+        "2025 营收同比": "-1.21%",
+        "2026 回购并注销": "2,188,614 股 / 约 30 亿元 / 均价 1,370.70 元",
+        "2026Q1 归母利润同比": "1.47%",
+        "2026Q1 经营现金流同比": "205.48%",
+        "2026Q1 营收同比": "6.54%",
+        "盈利收益率（估值基准 EPS）": "4.86%",
+        "股息率（当前配置股息）": "2.07%",
+        "静态市盈率（估值基准 EPS）": "20.57 倍"
+      },
+      "signals": [
+        {
+          "detail": "2026Q1 营收同比增长 6.54%，归母利润仅增长 1.47%；盈利增速仍需观察。",
+          "evidence_url": "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-04-25/600519_20260425_G9JL.pdf",
+          "severity": "yellow",
+          "title": "收入增长但利润增速明显偏慢"
+        },
+        {
+          "detail": "2025 年营收、归母利润和经营现金流分别同比下降 1.21%、4.53% 和 33.46%；现金流变化包含财务公司存款因素，不能只看单期数值。",
+          "evidence_url": "https://static.cninfo.com.cn/finalpage/2026-04-17/1225114741.PDF",
+          "severity": "yellow",
+          "title": "2025 年业绩与经营现金流回落"
+        },
+        {
+          "detail": "公司完成回购并注销 2,188,614 股（约 0.1748%），回购均价 1,370.70 元；2025 年度每股现金红利最终调整为 28.02423 元。",
+          "evidence_url": "https://www.moutaichina.com/mtgf/articleFileDir/2026-05/29/b2ab7fb5902b403cbf1566a367b4547c.pdf",
+          "severity": "information",
+          "title": "约 30 亿元回购股份已注销并提高每股分红"
+        }
+      ],
+      "recommendation": {
+        "action": "等待",
+        "action_code": "wait",
+        "confidence": "中",
+        "next_review_date": null,
+        "reasons": [
+          "基准内在价值约 1094.10 CNY，建仓价上限约 875.28 CNY。",
+          "基准情景五年期年化总回报约 7.99%。",
+          "投资逻辑与数据质量门槛已通过。",
+          "当前价格尚未同时满足安全边际与目标年化回报门槛。"
+        ],
+        "risks": [
+          "高端白酒需求、批价和渠道库存周期波动",
+          "收入和利润增速放缓且利润率承压",
+          "消费、税收、价格或行业监管政策变化"
+        ],
+        "invalidation": [
+          "核心产品批价与销量长期同步下滑并损害品牌稀缺性",
+          "ROE、自由现金流或分红能力连续多个报告期显著恶化",
+          "发生严重产品质量、治理或品牌信任事件"
+        ],
+        "valuation": {
+          "base": {
+            "assumptions": [
+              "EPS 年增速 5.0%",
+              "退出市盈率 22 倍",
+              "折现率 11.0%"
+            ],
+            "currency": "CNY",
+            "expected_return": "0.07991953986420545260252378809341865",
+            "margin_of_safety": "-0.23444454464148172336315590160856937",
+            "value": "1094.09532073573476633299135207989357"
+          },
+          "bear": {
+            "assumptions": [
+              "EPS 年增速 0.0%",
+              "退出市盈率 18 倍",
+              "折现率 11.0%"
+            ],
+            "currency": "CNY",
+            "expected_return": "-0.004271317232610566003349303654238009",
+            "margin_of_safety": "-0.92560965942232713981114833993298812",
+            "value": "701.388255605849505199667752404683757"
+          },
+          "bull": {
+            "assumptions": [
+              "EPS 年增速 8.0%",
+              "退出市盈率 25 倍",
+              "折现率 11.0%"
+            ],
+            "currency": "CNY",
+            "expected_return": "0.13572078553051247830437761160679083",
+            "margin_of_safety": "0.056412943660918723509941435598277787",
+            "value": "1431.34646763812454486841585922187856"
+          },
+          "margin_of_safety": "-0.23444454464148172336315590160856937"
+        }
+      }
+    }
+  ]
+}
