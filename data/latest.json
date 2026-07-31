@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "run_at": "2026-08-01T00:00:19.226205+08:00",
+  "run_at": "2026-08-01T00:36:02.933284+08:00",
   "status": "success",
   "warnings": [],
   "upcoming_events": [
@@ -103,7 +103,8 @@
         "confidence": "中",
         "next_review_date": "2026-08-12T20:00:00+08:00",
         "reasons": [
-          "基准内在价值约 555.36 HKD，建仓价上限约 416.52 HKD。",
+          "价值综合评分 79.5/100，质量评分 84.0/100，覆盖率 100.0%。",
+          "基准内在价值约 555.36 HKD，建仓价上限约 377.65 HKD。",
           "基准情景五年期年化总回报约 16.17%。",
           "投资逻辑与数据质量门槛已通过。",
           "当前价格尚未同时满足安全边际与目标年化回报门槛。"
@@ -153,6 +154,164 @@
             "value": "796.742379022256090049904801570774082"
           },
           "margin_of_safety": "0.144341259798575923838427600007950028"
+        },
+        "assessment": {
+          "adjusted_margin_of_safety": "0.320",
+          "adjusted_target_return": "0.155",
+          "buy_score_passed": true,
+          "composite_score": "79.5",
+          "dimensions": [
+            {
+              "coverage": "1.000",
+              "dimension": "profitability",
+              "factors": [
+                {
+                  "dimension": "profitability",
+                  "explanation": "越高越好；0 分阈值 0.10，100 分阈值 0.35。",
+                  "factor_id": "adjusted_profit_margin",
+                  "label": "经调整利润率",
+                  "score": "98.13567438148443735035913808",
+                  "source": "facts.annual_2025_adjusted_owner_profit / facts.annual_2025_revenue",
+                  "value": "0.3453391859537110933758978452",
+                  "weight": "1"
+                }
+              ],
+              "label": "盈利能力",
+              "score": "98.1",
+              "weight": "0.20"
+            },
+            {
+              "coverage": "1.000",
+              "dimension": "growth",
+              "factors": [
+                {
+                  "dimension": "growth",
+                  "explanation": "越高越好；0 分阈值 0.00，100 分阈值 0.20。",
+                  "factor_id": "adjusted_eps_growth",
+                  "label": "经调整 EPS 增长",
+                  "score": "60.0",
+                  "source": "facts.quarter_adjusted_eps_yoy",
+                  "value": "0.12",
+                  "weight": "1"
+                }
+              ],
+              "label": "增长质量",
+              "score": "60.0",
+              "weight": "0.15"
+            },
+            {
+              "coverage": "1.000",
+              "dimension": "cashflow",
+              "factors": [
+                {
+                  "dimension": "cashflow",
+                  "explanation": "越高越好；0 分阈值 0.05，100 分阈值 0.25。",
+                  "factor_id": "free_cash_flow_margin",
+                  "label": "自由现金流率",
+                  "score": "96.44187283852088321362064380",
+                  "source": "facts.annual_2025_free_cash_flow / facts.annual_2025_revenue",
+                  "value": "0.2428837456770417664272412876",
+                  "weight": "1"
+                }
+              ],
+              "label": "现金流",
+              "score": "96.4",
+              "weight": "0.15"
+            },
+            {
+              "coverage": "1.000",
+              "dimension": "balance_sheet",
+              "factors": [
+                {
+                  "dimension": "balance_sheet",
+                  "explanation": "越高越好；0 分阈值 -0.10，100 分阈值 0.20。",
+                  "factor_id": "net_cash_to_revenue",
+                  "label": "净现金／收入",
+                  "score": "80.81936685288640595903165737",
+                  "source": "facts.annual_2025_net_cash / facts.annual_2025_revenue",
+                  "value": "0.1424581005586592178770949721",
+                  "weight": "1"
+                }
+              ],
+              "label": "资产负债表",
+              "score": "80.8",
+              "weight": "0.15"
+            },
+            {
+              "coverage": "1.000",
+              "dimension": "capital_allocation",
+              "factors": [
+                {
+                  "dimension": "capital_allocation",
+                  "explanation": "越低越好；0 分阈值 0.08，100 分阈值 0.02。",
+                  "factor_id": "share_compensation_burden",
+                  "label": "股权激励费用／收入",
+                  "score": "77.90163800914190310397133230",
+                  "source": "facts.quarter_share_based_compensation / facts.quarter_revenue",
+                  "value": "0.03325901719451485813761720062",
+                  "weight": "1"
+                }
+              ],
+              "label": "资本配置",
+              "score": "77.9",
+              "weight": "0.10"
+            },
+            {
+              "coverage": "1.000",
+              "dimension": "valuation",
+              "factors": [
+                {
+                  "dimension": "valuation",
+                  "explanation": "越高越好；0 分阈值 -0.10，100 分阈值 0.40。",
+                  "factor_id": "margin_of_safety",
+                  "label": "基准安全边际",
+                  "score": "48.86825195971518476768552000",
+                  "source": "valuation.scenarios",
+                  "value": "0.144341259798575923838427600007950028",
+                  "weight": "1"
+                },
+                {
+                  "dimension": "valuation",
+                  "explanation": "越高越好；0 分阈值 0，100 分阈值 0.20。",
+                  "factor_id": "base_expected_return",
+                  "label": "基准预期年化回报",
+                  "score": "80.82914564641277851931502735",
+                  "source": "valuation.scenarios",
+                  "value": "0.16165829129282555703863005467416078",
+                  "weight": "1"
+                },
+                {
+                  "dimension": "valuation",
+                  "explanation": "越高越好；0 分阈值 -0.15，100 分阈值 0.08。",
+                  "factor_id": "downside_expected_return",
+                  "label": "悲观情景年化回报",
+                  "score": "92.89800555175168124211438670",
+                  "source": "valuation.scenarios",
+                  "value": "0.06366541276902886685686308941510088",
+                  "weight": "1"
+                }
+              ],
+              "label": "估值吸引力",
+              "score": "74.2",
+              "weight": "0.25"
+            }
+          ],
+          "minimum_buy_score": "70",
+          "minimum_coverage": "0.65",
+          "minimum_quality_score": "60",
+          "notes": [
+            "缺失维度按中性 50 分计入总分，同时降低覆盖率；不会因缺数据获得高分。",
+            "综合分用于新增风险敞口门槛，不能绕过数据质量、重大风险和估值安全边际。",
+            "中低置信度及三情景离散度会提高安全边际和目标回报要求。"
+          ],
+          "overall_coverage": "1.000",
+          "quality_coverage": "1.000",
+          "quality_qualified": true,
+          "quality_score": "84.0",
+          "risk_penalty": "2",
+          "scenario_dispersion": "0.801",
+          "valuation_score": "74.2",
+          "version": "value_scorecard.v2"
         }
       }
     },
@@ -217,7 +376,8 @@
         "confidence": "中",
         "next_review_date": null,
         "reasons": [
-          "基准内在价值约 238.94 HKD，建仓价上限约 155.31 HKD。",
+          "价值综合评分 81.2/100，质量评分 81.1/100，覆盖率 85.0%。",
+          "基准内在价值约 238.94 HKD，建仓价上限约 132.85 HKD。",
           "基准情景五年期年化总回报约 23.81%。",
           "投资逻辑与数据质量门槛已通过。",
           "当前价格尚未同时满足安全边际与目标年化回报门槛。"
@@ -267,6 +427,184 @@
             "value": "404.851017669325822594330840568167913"
           },
           "margin_of_safety": "0.319508556274673674705008611540170030"
+        },
+        "assessment": {
+          "adjusted_margin_of_safety": "0.444",
+          "adjusted_target_return": "0.197",
+          "buy_score_passed": true,
+          "composite_score": "81.2",
+          "dimensions": [
+            {
+              "coverage": "1.000",
+              "dimension": "profitability",
+              "factors": [
+                {
+                  "dimension": "profitability",
+                  "explanation": "越高越好；0 分阈值 0.08，100 分阈值 0.30。",
+                  "factor_id": "owner_profit_margin",
+                  "label": "归母净利率",
+                  "score": "100",
+                  "source": "facts.annual_owner_profit / facts.annual_revenue",
+                  "value": "0.3441721741122560927446976637",
+                  "weight": "1"
+                }
+              ],
+              "label": "盈利能力",
+              "score": "100.0",
+              "weight": "0.20"
+            },
+            {
+              "coverage": "1.000",
+              "dimension": "growth",
+              "factors": [
+                {
+                  "dimension": "growth",
+                  "explanation": "越高越好；0 分阈值 0.00，100 分阈值 0.50。",
+                  "factor_id": "recent_revenue_growth",
+                  "label": "近期收入增长",
+                  "score": "100",
+                  "source": "average(facts.q1_2026_revenue_yoy_low,facts.q1_2026_revenue_yoy_high)",
+                  "value": "0.775",
+                  "weight": "1"
+                }
+              ],
+              "label": "增长质量",
+              "score": "100.0",
+              "weight": "0.15"
+            },
+            {
+              "coverage": "0.000",
+              "dimension": "cashflow",
+              "factors": [
+                {
+                  "dimension": "cashflow",
+                  "explanation": "缺少 facts.annual_operating_cash_flow / facts.annual_owner_profit，该因子不打分并降低覆盖率。",
+                  "factor_id": "cash_conversion",
+                  "label": "经营现金流／净利润",
+                  "score": null,
+                  "source": "facts.annual_operating_cash_flow / facts.annual_owner_profit",
+                  "value": null,
+                  "weight": "1"
+                }
+              ],
+              "label": "现金流",
+              "score": null,
+              "weight": "0.15"
+            },
+            {
+              "coverage": "1.000",
+              "dimension": "balance_sheet",
+              "factors": [
+                {
+                  "dimension": "balance_sheet",
+                  "explanation": "越高越好；0 分阈值 0.05，100 分阈值 0.35。",
+                  "factor_id": "cash_to_assets",
+                  "label": "现金／总资产",
+                  "score": "100",
+                  "source": "facts.cash_and_equivalents / facts.total_assets",
+                  "value": "0.4291123358846483547080288264",
+                  "weight": "1"
+                },
+                {
+                  "dimension": "balance_sheet",
+                  "explanation": "越低越好；0 分阈值 0.60，100 分阈值 0.20。",
+                  "factor_id": "liabilities_to_assets",
+                  "label": "负债／总资产",
+                  "score": "76.41286252287053063244622018",
+                  "source": "facts.total_liabilities / facts.total_assets",
+                  "value": "0.2943485499085178774702151193",
+                  "weight": "1"
+                }
+              ],
+              "label": "资产负债表",
+              "score": "88.2",
+              "weight": "0.15"
+            },
+            {
+              "coverage": "1.000",
+              "dimension": "capital_allocation",
+              "factors": [
+                {
+                  "dimension": "capital_allocation",
+                  "explanation": "越低越好；0 分阈值 180，100 分阈值 60。",
+                  "factor_id": "inventory_days",
+                  "label": "存货周转天数",
+                  "score": "47.500",
+                  "source": "facts.inventory_days",
+                  "value": "123",
+                  "weight": "1"
+                },
+                {
+                  "dimension": "capital_allocation",
+                  "explanation": "越低越好；0 分阈值 0.60，100 分阈值 0.20。",
+                  "factor_id": "ip_concentration",
+                  "label": "头部 IP 收入集中度",
+                  "score": "54.7500",
+                  "source": "facts.the_monsters_revenue_share",
+                  "value": "0.381",
+                  "weight": "1"
+                }
+              ],
+              "label": "资本配置",
+              "score": "51.1",
+              "weight": "0.10"
+            },
+            {
+              "coverage": "1.000",
+              "dimension": "valuation",
+              "factors": [
+                {
+                  "dimension": "valuation",
+                  "explanation": "越高越好；0 分阈值 -0.10，100 分阈值 0.40。",
+                  "factor_id": "margin_of_safety",
+                  "label": "基准安全边际",
+                  "score": "83.90171125493473494100172230",
+                  "source": "valuation.scenarios",
+                  "value": "0.319508556274673674705008611540170030",
+                  "weight": "1"
+                },
+                {
+                  "dimension": "valuation",
+                  "explanation": "越高越好；0 分阈值 0，100 分阈值 0.20。",
+                  "factor_id": "base_expected_return",
+                  "label": "基准预期年化回报",
+                  "score": "100",
+                  "source": "valuation.scenarios",
+                  "value": "0.23810350691252495825498101136879924",
+                  "weight": "1"
+                },
+                {
+                  "dimension": "valuation",
+                  "explanation": "越高越好；0 分阈值 -0.15，100 分阈值 0.08。",
+                  "factor_id": "downside_expected_return",
+                  "label": "悲观情景年化回报",
+                  "score": "84.02237105251768130575313548",
+                  "source": "valuation.scenarios",
+                  "value": "0.04325145342079066700323221163586152",
+                  "weight": "1"
+                }
+              ],
+              "label": "估值吸引力",
+              "score": "89.3",
+              "weight": "0.25"
+            }
+          ],
+          "minimum_buy_score": "72",
+          "minimum_coverage": "0.65",
+          "minimum_quality_score": "60",
+          "notes": [
+            "缺失维度按中性 50 分计入总分，同时降低覆盖率；不会因缺数据获得高分。",
+            "综合分用于新增风险敞口门槛，不能绕过数据质量、重大风险和估值安全边际。",
+            "中低置信度及三情景离散度会提高安全边际和目标回报要求。"
+          ],
+          "overall_coverage": "0.850",
+          "quality_coverage": "0.800",
+          "quality_qualified": true,
+          "quality_score": "81.1",
+          "risk_penalty": "2",
+          "scenario_dispersion": "1.286",
+          "valuation_score": "89.3",
+          "version": "value_scorecard.v2"
         }
       }
     },
@@ -322,7 +660,8 @@
         "confidence": "中",
         "next_review_date": null,
         "reasons": [
-          "基准内在价值约 1094.10 CNY，建仓价上限约 875.28 CNY。",
+          "价值综合评分 52.3/100，质量评分 63.6/100，覆盖率 85.0%。",
+          "基准内在价值约 1094.10 CNY，建仓价上限约 806.35 CNY。",
           "基准情景五年期年化总回报约 7.99%。",
           "投资逻辑与数据质量门槛已通过。",
           "当前价格尚未同时满足安全边际与目标年化回报门槛。"
@@ -372,6 +711,174 @@
             "value": "1431.34646763812454486841585922187856"
           },
           "margin_of_safety": "-0.23444454464148172336315590160856937"
+        },
+        "assessment": {
+          "adjusted_margin_of_safety": "0.263",
+          "adjusted_target_return": "0.142",
+          "buy_score_passed": false,
+          "composite_score": "52.3",
+          "dimensions": [
+            {
+              "coverage": "1.000",
+              "dimension": "profitability",
+              "factors": [
+                {
+                  "dimension": "profitability",
+                  "explanation": "越高越好；0 分阈值 0.10，100 分阈值 0.30。",
+                  "factor_id": "return_on_equity",
+                  "label": "净资产收益率",
+                  "score": "100",
+                  "source": "facts.annual_2025_roe",
+                  "value": "0.3253",
+                  "weight": "1"
+                }
+              ],
+              "label": "盈利能力",
+              "score": "100.0",
+              "weight": "0.20"
+            },
+            {
+              "coverage": "1.000",
+              "dimension": "growth",
+              "factors": [
+                {
+                  "dimension": "growth",
+                  "explanation": "越高越好；0 分阈值 -0.05，100 分阈值 0.15。",
+                  "factor_id": "quarter_revenue_growth",
+                  "label": "季度收入增长",
+                  "score": "57.700",
+                  "source": "facts.quarter_revenue_yoy",
+                  "value": "0.0654",
+                  "weight": "1"
+                },
+                {
+                  "dimension": "growth",
+                  "explanation": "越高越好；0 分阈值 -0.05，100 分阈值 0.15。",
+                  "factor_id": "quarter_profit_growth",
+                  "label": "季度利润增长",
+                  "score": "32.3500",
+                  "source": "facts.quarter_owner_profit_yoy",
+                  "value": "0.0147",
+                  "weight": "1"
+                }
+              ],
+              "label": "增长质量",
+              "score": "45.0",
+              "weight": "0.15"
+            },
+            {
+              "coverage": "1.000",
+              "dimension": "cashflow",
+              "factors": [
+                {
+                  "dimension": "cashflow",
+                  "explanation": "越高越好；0 分阈值 0.50，100 分阈值 1.10。",
+                  "factor_id": "cash_conversion",
+                  "label": "经营现金流／净利润",
+                  "score": "41.22561313707198905570845587",
+                  "source": "facts.annual_2025_operating_cash_flow / facts.annual_2025_owner_profit",
+                  "value": "0.7473536788224319343342507352",
+                  "weight": "1"
+                }
+              ],
+              "label": "现金流",
+              "score": "41.2",
+              "weight": "0.15"
+            },
+            {
+              "coverage": "0.000",
+              "dimension": "balance_sheet",
+              "factors": [
+                {
+                  "dimension": "balance_sheet",
+                  "explanation": "缺少 facts.annual_2025_net_cash_to_revenue，该因子不打分并降低覆盖率。",
+                  "factor_id": "net_cash_strength",
+                  "label": "净现金／收入",
+                  "score": null,
+                  "source": "facts.annual_2025_net_cash_to_revenue",
+                  "value": null,
+                  "weight": "1"
+                }
+              ],
+              "label": "资产负债表",
+              "score": null,
+              "weight": "0.15"
+            },
+            {
+              "coverage": "1.000",
+              "dimension": "capital_allocation",
+              "factors": [
+                {
+                  "dimension": "capital_allocation",
+                  "explanation": "越高越好；0 分阈值 0.10，100 分阈值 0.55。",
+                  "factor_id": "dividend_payout",
+                  "label": "每股分红／每股收益",
+                  "score": "72.62405658780925305445561309",
+                  "source": "facts.annual_dividend_final_per_share / facts.annual_2025_diluted_eps",
+                  "value": "0.4268082546451416387450502589",
+                  "weight": "1"
+                }
+              ],
+              "label": "资本配置",
+              "score": "72.6",
+              "weight": "0.10"
+            },
+            {
+              "coverage": "1.000",
+              "dimension": "valuation",
+              "factors": [
+                {
+                  "dimension": "valuation",
+                  "explanation": "越高越好；0 分阈值 -0.10，100 分阈值 0.40。",
+                  "factor_id": "margin_of_safety",
+                  "label": "基准安全边际",
+                  "score": "0",
+                  "source": "valuation.scenarios",
+                  "value": "-0.23444454464148172336315590160856937",
+                  "weight": "1"
+                },
+                {
+                  "dimension": "valuation",
+                  "explanation": "越高越好；0 分阈值 0，100 分阈值 0.20。",
+                  "factor_id": "base_expected_return",
+                  "label": "基准预期年化回报",
+                  "score": "39.95976993210272630126189404",
+                  "source": "valuation.scenarios",
+                  "value": "0.07991953986420545260252378809341865",
+                  "weight": "1"
+                },
+                {
+                  "dimension": "valuation",
+                  "explanation": "越高越好；0 分阈值 -0.15，100 分阈值 0.08。",
+                  "factor_id": "downside_expected_return",
+                  "label": "悲观情景年化回报",
+                  "score": "63.36029685538671043332638970",
+                  "source": "valuation.scenarios",
+                  "value": "-0.004271317232610566003349303654238009",
+                  "weight": "1"
+                }
+              ],
+              "label": "估值吸引力",
+              "score": "34.4",
+              "weight": "0.25"
+            }
+          ],
+          "minimum_buy_score": "68",
+          "minimum_coverage": "0.65",
+          "minimum_quality_score": "60",
+          "notes": [
+            "缺失维度按中性 50 分计入总分，同时降低覆盖率；不会因缺数据获得高分。",
+            "综合分用于新增风险敞口门槛，不能绕过数据质量、重大风险和估值安全边际。",
+            "中低置信度及三情景离散度会提高安全边际和目标回报要求。"
+          ],
+          "overall_coverage": "0.850",
+          "quality_coverage": "0.800",
+          "quality_qualified": true,
+          "quality_score": "63.6",
+          "risk_penalty": "4",
+          "scenario_dispersion": "0.667",
+          "valuation_score": "34.4",
+          "version": "value_scorecard.v2"
         }
       }
     }
