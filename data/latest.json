@@ -1,9 +1,13 @@
 {
   "schema_version": 1,
-  "run_at": "2026-07-31T21:10:02.543128+08:00",
+  "run_at": "2026-07-31T23:27:31.498939+08:00",
   "status": "degraded",
   "warnings": [
-    "9992.HK: 泡泡玛特投资者关系 未形成可比较公告列表；不等同于没有新公告。"
+    "0700.HK: 部分行情源失败，已尝试降级：sina_quotes_personal_prototype: ConnectorTransportError: curl request failed with exit 28: curl: (28) Connection timed out after 10001 milliseconds\n",
+    "9992.HK: 部分行情源失败，已尝试降级：sina_quotes_personal_prototype: ConnectorTransportError: curl request failed with exit 28: curl: (28) Connection timed out after 10001 milliseconds\n",
+    "9992.HK: 泡泡玛特投资者关系 未形成可比较公告列表；不等同于没有新公告。",
+    "600519.SS: 部分行情源失败，已尝试降级：sina_quotes_personal_prototype: ConnectorTransportError: curl request failed with exit 28: curl: (28) Connection timed out after 10002 milliseconds\n",
+    "600519.SS: 上海证券交易所—贵州茅台公告 未形成可比较公告列表；不等同于没有新公告。"
   ],
   "upcoming_events": [
     {
@@ -65,13 +69,13 @@
       "name": "腾讯控股",
       "market": "HK",
       "price": {
-        "as_of": "2026-07-31T16:08:00+08:00",
-        "change_pct": "0.720644340822382365409071600",
+        "as_of": "2026-07-31T09:30:00+08:00",
+        "change_pct": "0.720649534131499329040173600",
         "currency": "HKD",
         "freshness": "fresh",
         "provisional": true,
-        "source_url": "https://hq.sinajs.cn/list=hk00700",
-        "value": "475.200"
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/0700.HK?interval=1d&range=5d&events=div%2Csplits&includePrePost=false",
+        "value": "475.20001220703125"
       },
       "metrics": {
         "2025 净现金": "人民币 1,071 亿元",
@@ -128,8 +132,8 @@
               "折现率 12.0%"
             ],
             "currency": "HKD",
-            "expected_return": "0.16165829129282555703863005467416078",
-            "margin_of_safety": "0.144341259798575923838427600007950028",
+            "expected_return": "0.16165828532464422493770533064460749",
+            "margin_of_safety": "0.144341237818245576670045882401270028",
             "value": "555.361591804855291298826381864699232"
           },
           "bear": {
@@ -139,8 +143,8 @@
               "折现率 12.0%"
             ],
             "currency": "HKD",
-            "expected_return": "0.06366541276902886685686308941510088",
-            "margin_of_safety": "-0.34966981245742501363112613122074738",
+            "expected_return": "0.06366540730429960208778801709124548",
+            "margin_of_safety": "-0.34966984712800914210214135833950297",
             "value": "352.086114406585693359375"
           },
           "bull": {
@@ -150,11 +154,11 @@
               "折现率 12.0%"
             ],
             "currency": "HKD",
-            "expected_return": "0.24660917552532713534205620879059982",
-            "margin_of_safety": "0.403571326803082192090871376935304861",
+            "expected_return": "0.24660916912069879879748147628861296",
+            "margin_of_safety": "0.403571311481904893877880878559399427",
             "value": "796.742379022256090049904801570774082"
           },
-          "margin_of_safety": "0.144341259798575923838427600007950028"
+          "margin_of_safety": "0.144341237818245576670045882401270028"
         }
       }
     },
@@ -163,13 +167,13 @@
       "name": "泡泡玛特",
       "market": "HK",
       "price": {
-        "as_of": "2026-07-31T16:08:00+08:00",
-        "change_pct": "-0.3676470588235294117647058800",
+        "as_of": "2026-07-31T09:30:00+08:00",
+        "change_pct": "-0.3676414558493301500707653800",
         "currency": "HKD",
         "freshness": "fresh",
         "provisional": true,
-        "source_url": "https://hq.sinajs.cn/list=hk09992",
-        "value": "162.600"
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/9992.HK?interval=1d&range=5d&events=div%2Csplits&includePrePost=false",
+        "value": "162.60000610351562"
       },
       "metrics": {
         "2026-07-20 股本变动": "新增 56,053 股（约 0.0042%）",
@@ -242,8 +246,8 @@
               "折现率 14.0%"
             ],
             "currency": "HKD",
-            "expected_return": "0.23810350691252495825498101136879924",
-            "margin_of_safety": "0.319508556274673674705008611540170030",
+            "expected_return": "0.23810349761758778307417879579504308",
+            "margin_of_safety": "0.319508530731068778924687479712488313",
             "value": "238.944958822482843578571621396690633"
           },
           "bear": {
@@ -253,8 +257,8 @@
               "折现率 14.0%"
             ],
             "currency": "HKD",
-            "expected_return": "0.04325145342079066700323221163586152",
-            "margin_of_safety": "-0.66563671713623565915228591676083584",
+            "expected_return": "0.04325144558868562625123636239741522",
+            "margin_of_safety": "-0.66563677965923516890957997356878819",
             "value": "97.6203264056051848462410398746546857"
           },
           "bull": {
@@ -264,11 +268,11 @@
               "折现率 14.0%"
             ],
             "currency": "HKD",
-            "expected_return": "0.37269552322593313995925916227982454",
-            "margin_of_safety": "0.598370776153492559039282909731665741",
+            "expected_return": "0.37269551292055998028332004395223857",
+            "margin_of_safety": "0.598370761077537816138700816558451923",
             "value": "404.851017669325822594330840568167913"
           },
-          "margin_of_safety": "0.319508556274673674705008611540170030"
+          "margin_of_safety": "0.319508530731068778924687479712488313"
         }
       }
     },
@@ -277,13 +281,13 @@
       "name": "贵州茅台",
       "market": "CN",
       "price": {
-        "as_of": "2026-07-31T15:34:59+08:00",
-        "change_pct": "-0.8195276700740218540712019700",
+        "as_of": "2026-07-31T09:30:00+08:00",
+        "change_pct": "-0.8195301741610310502281467700",
         "currency": "CNY",
         "freshness": "fresh",
         "provisional": true,
-        "source_url": "https://hq.sinajs.cn/list=sh600519",
-        "value": "1350.600"
+        "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/600519.SS?interval=1d&range=5d&events=div%2Csplits&includePrePost=false",
+        "value": "1350.5999755859375"
       },
       "metrics": {
         "2025 ROE": "32.53%",
@@ -347,8 +351,8 @@
               "折现率 11.0%"
             ],
             "currency": "CNY",
-            "expected_return": "0.07991953986420545260252378809341865",
-            "margin_of_safety": "-0.23444454464148172336315590160856937",
+            "expected_return": "0.07991954376842926826516955599097106",
+            "margin_of_safety": "-0.23444452232709828958470566704926360",
             "value": "1094.09532073573476633299135207989357"
           },
           "bear": {
@@ -358,8 +362,8 @@
               "折现率 11.0%"
             ],
             "currency": "CNY",
-            "expected_return": "-0.004271317232610566003349303654238009",
-            "margin_of_safety": "-0.92560965942232713981114833993298812",
+            "expected_return": "-0.004271313632761231220799445990757276",
+            "margin_of_safety": "-0.92560962461412739470496687480962534",
             "value": "701.388255605849505199667752404683757"
           },
           "bull": {
@@ -369,11 +373,11 @@
               "折现率 11.0%"
             ],
             "currency": "CNY",
-            "expected_return": "0.13572078553051247830437761160679083",
-            "margin_of_safety": "0.056412943660918723509941435598277787",
+            "expected_return": "0.13572078963647405704281028522237530",
+            "margin_of_safety": "0.056412960717629346679904027637423663",
             "value": "1431.34646763812454486841585922187856"
           },
-          "margin_of_safety": "-0.23444454464148172336315590160856937"
+          "margin_of_safety": "-0.23444452232709828958470566704926360"
         }
       }
     }
