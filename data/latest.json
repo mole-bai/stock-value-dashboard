@@ -1,10 +1,11 @@
 {
   "schema_version": 1,
-  "run_at": "2026-10-03T22:46:32.440108+08:00",
+  "run_at": "2026-10-04T23:26:47.632315+08:00",
   "status": "degraded",
   "warnings": [
     "0700.HK: 仍有 45 条官方文件未完成复核/重估，正面建议保持冻结。",
     "9992.HK: 仍有 7 条官方文件未完成复核/重估，正面建议保持冻结。",
+    "600519.SS: 行情时间为 2026-09-30T08:14:58+00:00，已超过允许时效，正面建议被冻结。",
     "600519.SS: 仍有 8 条官方文件未完成复核/重估，正面建议保持冻结。"
   ],
   "upcoming_events": [],
@@ -565,7 +566,7 @@
         "as_of": "2026-09-30T16:14:58+08:00",
         "change_pct": "1.864711309668333899868887500",
         "currency": "CNY",
-        "freshness": "fresh",
+        "freshness": "stale",
         "provisional": true,
         "source_url": "https://qt.gtimg.cn/q=sh600519",
         "value": "1258.62"
@@ -612,6 +613,7 @@
           "价值综合评分 53.4/100，质量评分 63.6/100，覆盖率 85.0%。",
           "基准内在价值约 1094.10 CNY，建仓价上限约 806.35 CNY。",
           "基准情景五年期年化总回报约 9.53%。",
+          "data-quality blocker: price is missing or stale",
           "data-quality blocker: a new filing or material event is awaiting parsing and revaluation"
         ],
         "risks": [
